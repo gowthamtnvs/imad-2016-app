@@ -5,6 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+console.log('hi this is me')
+confirm('hello how are you:presss yesfor fine')
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
